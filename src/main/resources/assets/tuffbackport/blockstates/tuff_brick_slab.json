@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tuffbackport:block/tuff_brick_slab"
+    },
+    "type=double": {
+      "model": "tuffbackport:block/tuff_bricks"
+    },
+    "type=top": {
+      "model": "tuffbackport:block/tuff_brick_slab_top"
+    }
+  }
+}

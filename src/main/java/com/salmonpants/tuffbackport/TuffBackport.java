@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.MinecraftForge;
@@ -49,6 +50,8 @@ public class TuffBackport
     public static final RegistryObject<Block> TUFF_BRICKS = BLOCKS.register("tuff_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
     public static final RegistryObject<BlockItem> TUFF_BRICKS_ITEM = ITEMS.register("tuff_bricks", () -> new BlockItem(TUFF_BRICKS.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Slab
+    public static final RegistryObject<SlabBlock> TUFF_BRICK_SLAB = BLOCKS.register("tuff_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)));
+    public static final RegistryObject<BlockItem> TUFF_BRICK_SLAB_ITEM = ITEMS.register("tuff_brick_slab", () -> new BlockItem(TUFF_BRICK_SLAB.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Stairs
     // Tuff Brick Wall
 
