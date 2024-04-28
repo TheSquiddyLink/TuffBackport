@@ -2,11 +2,14 @@ package com.salmonpants.tuffbackport;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -29,9 +32,22 @@ import java.util.stream.Collectors;
 @Mod("tuffbackport")
 public class TuffBackport
 {
+
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    public static final String MODID = "tuffbackport";
+    public static final CreativeModeTab TAB = new CreativeModeTab(MODID){
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(Blocks.TUFF);
+        }
+    };
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    // Tuff Bricks
+    public static final RegistryObject<Block> TUFF_BRICKS = BLOCKS.register("tuff_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
+    public static final RegistryObject<BlockItem> TUFF_BRICKS_ITEM = ITEMS.register("tuff_bricks", () -> new BlockItem(TUFF_BRICKS.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Slab
     // Tuff Brick Stairs
     // Tuff Brick Wall
@@ -59,6 +75,8 @@ public class TuffBackport
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void setup(final FMLCommonSetupEvent event)

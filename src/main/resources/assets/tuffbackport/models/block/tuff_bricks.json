@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "minecraft:block/tuff_bricks"
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+      "all": "tuffbackport:block/tuff_bricks"
+    }
   }
-}
