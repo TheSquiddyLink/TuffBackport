@@ -9,6 +9,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.MinecraftForge;
@@ -36,7 +37,7 @@ public class TuffBackport
 
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-
+    private static final BlockBehaviour.Properties TUFF_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE);
     public static final String MODID = "tuffbackport";
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID){
         @Override
@@ -47,12 +48,14 @@ public class TuffBackport
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     // Tuff Bricks
-    public static final RegistryObject<Block> TUFF_BRICKS = BLOCKS.register("tuff_bricks", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
+    public static final RegistryObject<Block> TUFF_BRICKS = BLOCKS.register("tuff_bricks", () -> new Block(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> TUFF_BRICKS_ITEM = ITEMS.register("tuff_bricks", () -> new BlockItem(TUFF_BRICKS.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Slab
-    public static final RegistryObject<SlabBlock> TUFF_BRICK_SLAB = BLOCKS.register("tuff_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.of(Material.STONE)));
+    public static final RegistryObject<SlabBlock> TUFF_BRICK_SLAB = BLOCKS.register("tuff_brick_slab", () -> new SlabBlock(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> TUFF_BRICK_SLAB_ITEM = ITEMS.register("tuff_brick_slab", () -> new BlockItem(TUFF_BRICK_SLAB.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Stairs
+    public static final RegistryObject<StairBlock> TUFF_BRICK_STAIRS = BLOCKS.register("tuff_brick_stairs", () -> new StairBlock(() -> TUFF_BRICKS.get().defaultBlockState(), TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> TUFF_BRICK_STAIRS_ITEM = ITEMS.register("tuff_brick_stairs", () -> new BlockItem(TUFF_BRICK_STAIRS.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Wall
 
     // Chiseled Tuff Bricks
