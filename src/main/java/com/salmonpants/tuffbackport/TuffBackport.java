@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.MinecraftForge;
@@ -57,7 +58,8 @@ public class TuffBackport
     public static final RegistryObject<StairBlock> TUFF_BRICK_STAIRS = BLOCKS.register("tuff_brick_stairs", () -> new StairBlock(() -> TUFF_BRICKS.get().defaultBlockState(), TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> TUFF_BRICK_STAIRS_ITEM = ITEMS.register("tuff_brick_stairs", () -> new BlockItem(TUFF_BRICK_STAIRS.get(),new Item.Properties().tab(TAB)));
     // Tuff Brick Wall
-
+    public static final RegistryObject<WallBlock> TUFF_BRICK_WALL = BLOCKS.register("tuff_brick_wall", () -> new WallBlock(TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> TUFF_BRICK_WALL_ITEM = ITEMS.register("tuff_brick_wall", () -> new BlockItem(TUFF_BRICK_WALL.get(),new Item.Properties().tab(TAB)));
     // Chiseled Tuff Bricks
     // Chiseled Tuff
 
