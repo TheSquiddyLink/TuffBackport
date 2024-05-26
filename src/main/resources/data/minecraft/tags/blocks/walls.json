@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "tuffbackport:tuff_brick_wall",
-    "tuffbackport:polished_tuff_wall"
+    "tuffbackport:polished_tuff_wall",
+    "tuffbackport:tuff_wall"
   ]
 }
   

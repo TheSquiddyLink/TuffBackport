@@ -14,7 +14,7 @@
 
 [X]Tuff Slab
 [X]Tuff Stairs
-[ ]Tuff Wall
+[X]Tuff Wall
 
 
 # Stone cutter

@@ -85,6 +85,8 @@ public class TuffBackport
     public static final RegistryObject<StairBlock> TUFF_STAIRS = BLOCKS.register("tuff_stairs", () -> new StairBlock(() -> POLISHED_TUFF.get().defaultBlockState() , TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> TUFF_STAIRS_ITEM = ITEMS.register("tuff_stairs", () -> new BlockItem(TUFF_STAIRS.get(),new Item.Properties().tab(TAB)));
     // Tuff Wall
+    public static final RegistryObject<WallBlock> TUFF_WALL = BLOCKS.register("tuff_wall", () -> new WallBlock(TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> TUFF_WALL_ITEM = ITEMS.register("tuff_wall", () -> new BlockItem(TUFF_WALL.get(),new Item.Properties().tab(TAB)));
 
     public TuffBackport()
     {
