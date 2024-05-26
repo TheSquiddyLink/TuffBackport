@@ -65,6 +65,8 @@ public class TuffBackport
     public static final RegistryObject<Block> CHISELED_TUFF = BLOCKS.register("chiseled_tuff", () -> new Block(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> CHISELED_TUFF_ITEM = ITEMS.register("chiseled_tuff", () -> new BlockItem(CHISELED_TUFF.get(),new Item.Properties().tab(TAB)));
     // Chiseled Tuff Bricks
+    public static final RegistryObject<Block> CHISELED_TUFF_BRICKS = BLOCKS.register("chiseled_tuff_bricks", () -> new Block(TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> CHISELED_TUFF_BRICKS_ITEM = ITEMS.register("chiseled_tuff_bricks", () -> new BlockItem(CHISELED_TUFF_BRICKS.get(),new Item.Properties().tab(TAB)));
     // Polished Tuff Slab
     // Polished Tuff Stairs
     // Polished Tuff Wall
