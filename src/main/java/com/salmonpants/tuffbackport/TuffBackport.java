@@ -8,7 +8,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
@@ -67,10 +66,12 @@ public class TuffBackport
     // Chiseled Tuff Bricks
     public static final RegistryObject<Block> CHISELED_TUFF_BRICKS = BLOCKS.register("chiseled_tuff_bricks", () -> new Block(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> CHISELED_TUFF_BRICKS_ITEM = ITEMS.register("chiseled_tuff_bricks", () -> new BlockItem(CHISELED_TUFF_BRICKS.get(),new Item.Properties().tab(TAB)));
+    // Polished Tuff
+    public static final RegistryObject<Block> POLISHED_TUFF = BLOCKS.register("polished_tuff", () -> new Block(TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> POLISHED_TUFF_ITEM = ITEMS.register("polished_tuff", () -> new BlockItem(POLISHED_TUFF.get(),new Item.Properties().tab(TAB)));
     // Polished Tuff Slab
     // Polished Tuff Stairs
     // Polished Tuff Wall
-    // Polished Tuff
     
     // Tuff Slab
     // Tuff Stairs
