@@ -70,6 +70,8 @@ public class TuffBackport
     public static final RegistryObject<Block> POLISHED_TUFF = BLOCKS.register("polished_tuff", () -> new Block(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> POLISHED_TUFF_ITEM = ITEMS.register("polished_tuff", () -> new BlockItem(POLISHED_TUFF.get(),new Item.Properties().tab(TAB)));
     // Polished Tuff Slab
+    public static final RegistryObject<SlabBlock> POLISHED_TUFF_SLAB = BLOCKS.register("polished_tuff_slab", () -> new SlabBlock(TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> POLISHED_TUFF_SLAB_ITEM = ITEMS.register("polished_tuff_slab", () -> new BlockItem(POLISHED_TUFF_SLAB.get(),new Item.Properties().tab(TAB)));
     // Polished Tuff Stairs
     // Polished Tuff Wall
     
