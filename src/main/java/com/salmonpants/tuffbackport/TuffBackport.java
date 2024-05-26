@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
@@ -43,7 +44,7 @@ public class TuffBackport
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID){
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Blocks.TUFF);
+            return new ItemStack(Blocks.OAK_LOG);
         }
     };
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
@@ -60,9 +61,10 @@ public class TuffBackport
     // Tuff Brick Wall
     public static final RegistryObject<WallBlock> TUFF_BRICK_WALL = BLOCKS.register("tuff_brick_wall", () -> new WallBlock(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> TUFF_BRICK_WALL_ITEM = ITEMS.register("tuff_brick_wall", () -> new BlockItem(TUFF_BRICK_WALL.get(),new Item.Properties().tab(TAB)));
-    // Chiseled Tuff Bricks
     // Chiseled Tuff
-
+    public static final RegistryObject<Block> CHISELED_TUFF = BLOCKS.register("chiseled_tuff", () -> new Block(TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> CHISELED_TUFF_ITEM = ITEMS.register("chiseled_tuff", () -> new BlockItem(CHISELED_TUFF.get(),new Item.Properties().tab(TAB)));
+    // Chiseled Tuff Bricks
     // Polished Tuff Slab
     // Polished Tuff Stairs
     // Polished Tuff Wall
