@@ -12,7 +12,7 @@
 [X]Polished Tuff Stairs
 [X]Polished Tuff Wall
 
-[ ]Tuff Slab
+[X]Tuff Slab
 [ ]Tuff Stairs
 [ ]Tuff Wall
 
