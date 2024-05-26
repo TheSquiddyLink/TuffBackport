@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "tuffbackport:tuff_bricks"
+  },
+  "result": "tuffbackport:chiseled_tuff_bricks",
+  "count": 1
+}
