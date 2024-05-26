@@ -43,7 +43,7 @@ public class TuffBackport
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID){
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(Blocks.OAK_LOG);
+            return new ItemStack(Blocks.TUFF);
         }
     };
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
@@ -82,6 +82,8 @@ public class TuffBackport
     public static final RegistryObject<SlabBlock> TUFF_SLAB = BLOCKS.register("tuff_slab", () -> new SlabBlock(TUFF_PROPERTIES));
     public static final RegistryObject<BlockItem> TUFF_SLAB_ITEM = ITEMS.register("tuff_slab", () -> new BlockItem(TUFF_SLAB.get(),new Item.Properties().tab(TAB)));
     // Tuff Stairs
+    public static final RegistryObject<StairBlock> TUFF_STAIRS = BLOCKS.register("tuff_stairs", () -> new StairBlock(() -> POLISHED_TUFF.get().defaultBlockState() , TUFF_PROPERTIES));
+    public static final RegistryObject<BlockItem> TUFF_STAIRS_ITEM = ITEMS.register("tuff_stairs", () -> new BlockItem(TUFF_STAIRS.get(),new Item.Properties().tab(TAB)));
     // Tuff Wall
 
     public TuffBackport()
