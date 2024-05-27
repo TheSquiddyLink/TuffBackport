@@ -52,3 +52,15 @@
 [X]Tuff Slab
 [X]Tuff Stairs
 [X]Tuff Wall
+
+# Publish 
+[mods.toml](./src/main/resources/META-INF/mods.toml)
+[X] Title
+[ ] Mod Version
+[ ] Minecraft Version
+[ ] License
+[X] Credits
+[X] Authors
+[X] Description
+[ ] Logo
+[ ] Add GitHub
