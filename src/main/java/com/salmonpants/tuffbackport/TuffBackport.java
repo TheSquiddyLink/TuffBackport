@@ -40,12 +40,8 @@ public class TuffBackport
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final BlockBehaviour.Properties TUFF_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE);
     public static final String MODID = "tuffbackport";
-    public static final CreativeModeTab TAB = new CreativeModeTab(MODID){
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(Blocks.TUFF);
-        }
-    };
+
+    public static final CreativeModeTab TAB = CreativeModeTab.TAB_DECORATIONS;
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     // Tuff Bricks
