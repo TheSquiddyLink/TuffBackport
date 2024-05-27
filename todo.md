@@ -36,19 +36,19 @@
 [X]Tuff Wall
 
 # Lang
-[ ]Tuff Bricks
-[ ]Tuff Brick Slab
-[ ]Tuff Brick Stairs
-[ ]Tuff Brick Wall
+[X]Tuff Bricks
+[X]Tuff Brick Slab
+[X]Tuff Brick Stairs
+[X]Tuff Brick Wall
 
-[ ]Chiseled Tuff
-[ ]Chiseled Tuff Bricks
+[X]Chiseled Tuff
+[X]Chiseled Tuff Bricks
 
-[ ]Polished Tuff
-[ ]Polished Tuff Slab
-[ ]Polished Tuff Stairs
-[ ]Polished Tuff Wall
+[X]Polished Tuff
+[X]Polished Tuff Slab
+[X]Polished Tuff Stairs
+[X]Polished Tuff Wall
 
-[ ]Tuff Slab
-[ ]Tuff Stairs
-[ ]Tuff Wall
+[X]Tuff Slab
+[X]Tuff Stairs
+[X]Tuff Wall
