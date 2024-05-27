@@ -56,7 +56,7 @@
 # Publish 
 [mods.toml](./src/main/resources/META-INF/mods.toml)
 [X] Title
-[ ] Mod Version
+[X] Mod Version
 [ ] Minecraft Version
 [ ] License
 [X] Credits
