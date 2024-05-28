@@ -57,8 +57,8 @@
 [mods.toml](./src/main/resources/META-INF/mods.toml)
 [X] Title
 [X] Mod Version
-[ ] Minecraft Version
-[ ] License
+[X] Minecraft Version
+[X] License
 [X] Credits
 [X] Authors
 [X] Description
