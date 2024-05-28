@@ -62,5 +62,5 @@
 [X] Credits
 [X] Authors
 [X] Description
-[ ] Logo
-[ ] Add GitHub
+[X] Logo
+[X] Add GitHub
