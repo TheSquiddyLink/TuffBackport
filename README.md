@@ -3,7 +3,7 @@
 ## About
 This is the first Mod that I have published, expect issues and bugs.\
 This simply ports over all tuff-related blocks from 1.20/1.21 to 1.18.\
-This imports all crafting recipies and lang files from 1.20/1.21 to 1.18.
+This imports all crafting recipes and lang files from 1.20/1.21 to 1.18.
 
 
 ## Credits
