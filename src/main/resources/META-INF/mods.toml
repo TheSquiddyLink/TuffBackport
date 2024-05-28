@@ -42,7 +42,7 @@ authors="Squibs" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This is my first Mod that I have published, expect issues and bugs.
+This is the first Mod that I have published, expect issues and bugs.
 This simply ports over all tuff related blocks from 1.20/1.21 to 1.18
 The GitHub can be found here: [ADD GITHUB LINK]
 '''
