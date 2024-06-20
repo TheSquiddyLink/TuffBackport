@@ -53,6 +53,23 @@
 [X]Tuff Stairs
 [X]Tuff Wall
 
+# Loot Table
+[ ]Tuff Bricks
+[ ]Tuff Brick Slab
+[ ]Tuff Brick Stairs
+[ ]Tuff Brick Wall
+
+[ ]Chiseled Tuff
+[ ]Chiseled Tuff Bricks
+
+[ ]Polished Tuff
+[ ]Polished Tuff Slab
+[ ]Polished Tuff Stairs
+[ ]Polished Tuff Wall
+
+[ ]Tuff Slab
+[ ]Tuff Stairs
+[ ]Tuff Wall
 # Publish 
 [mods.toml](./src/main/resources/META-INF/mods.toml)
 [X] Title
