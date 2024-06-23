@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "tuffbackport:chiseled_tuff",
+        "tuffbackport:chiseled_tuff_bricks",
+        "tuffbackport:polished_tuff",
+        "tuffbackport:polished_tuff_slab",
+        "tuffbackport:polished_tuff_stairs",
+        "tuffbackport:polished_tuff_wall",
+        "tuffbackport:tuff_brick_slab",
+        "tuffbackport:tuff_brick_stairs",
+        "tuffbackport:tuff_brick_wall",
+        "tuffbackport:tuff_bricks",
+        "tuffbackport:tuff_slab",
+        "tuffbackport:tuff_stairs",
+        "tuffbackport:tuff_wall"
+    ]
+  }

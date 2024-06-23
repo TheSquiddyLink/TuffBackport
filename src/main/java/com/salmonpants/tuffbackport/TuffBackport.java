@@ -37,7 +37,7 @@ public class TuffBackport
 
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static final BlockBehaviour.Properties TUFF_PROPERTIES = BlockBehaviour.Properties.of(Material.STONE);
+    private static final Block.Properties TUFF_PROPERTIES = Block.Properties.copy(Blocks.TUFF);
     public static final String MODID = "tuffbackport";
 
     public static final CreativeModeTab TAB = CreativeModeTab.TAB_DECORATIONS;
